@@ -12,8 +12,7 @@ RUN apt-get update && apt-get install -y curl && \
 RUN apt-get update && apt-get install -y \
     ros-humble-turtlesim \
     ignition-fortress \
-    ros-humble-turtlebot4-simulator \
-    ros-humble-irobot-create-nodes \
+    ros-humble-ros-gz-bridge \
     python3-colcon-common-extensions \
     xvfb fluxbox x11vnc websockify git && \
     rm -rf /var/lib/apt/lists/*

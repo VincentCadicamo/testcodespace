@@ -1,4 +1,4 @@
-# Workshop 1
+# Workshop 2
 ## Getting Started
 
 To start using this environment:
@@ -42,7 +42,7 @@ You should now see the graphical desktop where you can run tools like RViz or Ga
 Open a terminal in your Codespace and run:
 
 ```bash
-ros2 launch turtlebot4_ignition_bringup turtlebot4_ignition.launch.py
+ros2 launch sim/sim.launch.py
 ```
 
 ### 2. Check active topics
@@ -54,12 +54,4 @@ ros2 topic list
 To display the messages on a topic (e.g. /cmd_vel) run
 ```bash
 ros2 topic info /cmd_vel --verbose
-```
-
-### 3. Undocking turtlebot4
-To undock turtle bot
-Open a new terminal in your Codespace and run:
-
-```bash
-ros2 action send_goal /undock irobot_create_msgs/action/Undock "{}"
 ```
